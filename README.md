@@ -6,7 +6,11 @@ The main app `angular-lib-app` is a demo app for contained Angular library packa
 
 ## Package @marco-eckstein/angular-lib-common
 
-[![npm version](https://badge.fury.io/js/%40marco-eckstein%2Fangular-lib-common.svg)](https://badge.fury.io/js/%40marco-eckstein%2Fangular-lib-common) Angular library for common tasks
+[![npm version](https://badge.fury.io/js/%40marco-eckstein%2Fangular-lib-common.svg)](
+    https://badge.fury.io/js/%40marco-eckstein%2Fangular-lib-common
+)
+
+Angular library for common tasks
 
 ### ExternalHRefModule
 
@@ -23,9 +27,15 @@ vs.\
 
 See the code documentation for details about usage and configuration:
 
-- [ExternalHRefModule](blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href.module.ts)
-- [ExternalHrefDirective](blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href.directive.ts)
-- [ExternalHrefOptions](blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href-options.ts)
+- [ExternalHRefModule](
+      blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href.module.ts
+  )
+- [ExternalHrefDirective](
+      blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href.directive.ts
+  )
+- [ExternalHrefOptions](
+      blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href-options.ts
+  )
 
 ## Development
 
