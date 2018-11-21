@@ -1,3 +1,7 @@
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](
+    https://conventionalcommits.org
+)
+
 # angular-lib
 
 Multi-package repository for [Angular](https://angular.io/) library packages. So far, there is only one package.
@@ -51,3 +55,6 @@ Run `npm run build-all` to test and build everything. It will also apply linting
 Due to the aforementioned bug, you may have to run this multiple times (typically twice) until it succeeds.
 
 Run `npm run doc` to build documentation.
+
+Run `npm run standard-version` instead of `npm version` to bump the version.
+Afterwards, you have to amend the commit and set the version in the library packages `package.json` files.

@@ -11,6 +11,7 @@
     "build-lib": "ng test @marco-eckstein/angular-lib-common --watch=false && ng build @marco-eckstein/angular-lib-common",
     "build-app": "ng test angular-lib-app --watch=false && ng build angular-lib-app --prod",
     "build-all": "npm run lint && npm run build-lib && npm run build-app && npm run e2e",
+    "standard-version": "standard-version",
     "doc": "./node_modules/.bin/compodoc -p ./tsconfig.json",
     "prepack": "npm run build-all"
   },
@@ -49,6 +50,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^4.2.0",
     "protractor": "~5.4.0",
+    "standard-version": "^4.4.0",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.29.0",
     "tslib": "^1.9.0",
