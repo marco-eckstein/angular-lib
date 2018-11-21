@@ -7,7 +7,11 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-lib": "ng test @marco-eckstein/angular-lib-common --watch=false && ng build @marco-eckstein/angular-lib-common",
+    "build-app": "ng test angular-lib-app --watch=false && ng build angular-lib-app --prod",
+    "build-all": "npm run lint && npm run build-lib && npm run build-app && npm run e2e",
+    "prepack": "npm run build-all"
   },
   "private": true,
   "dependencies": {
