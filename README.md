@@ -13,6 +13,9 @@ The main app `angular-lib-app` is a demo app for contained Angular library packa
 [![npm version](https://badge.fury.io/js/%40marco-eckstein%2Fangular-lib-common.svg)](
     https://badge.fury.io/js/%40marco-eckstein%2Fangular-lib-common
 )
+[![npm downloads](https://img.shields.io/npm/dt/@marco-eckstein/angular-lib-common.svg)](
+    https://npm-stat.com/charts.html?package=%40marco-eckstein%2Fangular-lib-common&from=2018-11-21
+)
 
 Angular library for common tasks
 
