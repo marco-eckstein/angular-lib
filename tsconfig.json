@@ -16,6 +16,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    // true via '"strict": true'. TODO: Consider removing later:
+    "strictPropertyInitialization": false
   }
 }

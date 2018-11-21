@@ -7,5 +7,9 @@
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true, // TODO: Remove when this has become the default.
+    "strictInjectionParameters": true // TODO: Remove when this has become the default.
+  },
 }
