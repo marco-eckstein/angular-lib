@@ -2,8 +2,6 @@ import { Directive, ElementRef, Inject, Input, OnChanges } from "@angular/core";
 
 import { defaultOptions, ExternalHrefOptions, optionsToken } from "./external-href-options";
 
-// tslint:disable-next-line:directive-selector
-@Directive({ selector: "a" })
 /**
  * A directive that makes sure all HTML `a` elements with `target="_blank"` and an external `href`
  * will have "noopener" and/or "noreferrer" in the `rel` attribute. This solves security and performance
@@ -12,12 +10,14 @@ import { defaultOptions, ExternalHrefOptions, optionsToken } from "./external-hr
  * It can also be configured to set `target="_blank"` on all `a` elements with external `href` automatically.
  * This allows for more concise source HTML.
  *
- * Use `configure(options: ExternalHrefOptions)` for configuration and also see `ExternalHrefOptions`.
+ * See {@link ExternalHrefModule} and {@link ExternalHrefOptions} for configuration information.
  *
- * ### Credits
+ * #### Credits
  *
  * The code was inspired by https://kevinphelps.me/blog/2017-06-30/handling-external-links-in-angular.
  */
+// tslint:disable-next-line:directive-selector
+@Directive({ selector: "a" })
 export class ExternalHRefDirective implements OnChanges {
 
     @Input() href?: string;

@@ -4,9 +4,9 @@ import { ExternalHrefOptions, optionsToken } from "./external-href-options";
 import { ExternalHRefDirective } from "./external-href.directive";
 
 /**
- * The module with the directive `ExternalHRefDirective`.
+ * The module containing {@link ExternalHRefDirective}.
  *
- * You can configure this module and hence the directive via `configure(options: ExternalHrefOptions)`
+ * You can configure this module and hence the directive via {@link configure(options)}
  * as follows:
  * ```
  * @NgModule({
@@ -33,27 +33,27 @@ import { ExternalHRefDirective } from "./external-href.directive";
 export class ExternalHRefModule {
 
     /**
-     * Configures this module and thus directive `ExternalHRefDirective`.
+     * Configures this module and thus {@link ExternalHRefDirective}.
      *
-     * ### Options
+     * #### Options
      *
-     * (copied from `ExternalHrefOptions`)
+     * (copied from {@link ExternalHRefOptions})
      *
-     * #### isExternalHRef
+     * ##### isExternalHRef
      *
      * The function that determines whether `href` is considered external.
      *
      * By default, a `href` starting with "http://" or "https://" but
      * not starting with `window.location.origin` is considered external.
      *
-     * #### externalHRefTargetDefaultsToBlank
+     * ##### externalHRefTargetDefaultsToBlank
      *
      * Set whether an `a` element with an external `href` and no `target` will automatically
      * be given `target="_blank"`.
      *
      * The default is `false`.
      *
-     * #### safeBlankRelTokens
+     * ##### safeBlankRelTokens
      *
      * Set one or many tokens that will be added to `rel` if `target="blank"`.
      * At least one must be "noopener" or "noreferrer".
@@ -66,7 +66,7 @@ export class ExternalHRefModule {
      * - https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/
      * - https://caniuse.com/#feat=rel-noopener
      *
-     * ### Examples
+     * #### Examples
      *
      * By default:
      * - `<a href="http://foo"></a>` stays\
