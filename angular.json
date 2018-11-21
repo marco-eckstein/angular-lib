@@ -152,6 +152,41 @@
           }
         }
       }
+    },
+    "@marco-eckstein/angular-lib-common": {
+      "root": "projects/marco-eckstein/angular-lib-common",
+      "sourceRoot": "projects/marco-eckstein/angular-lib-common/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/marco-eckstein/angular-lib-common/tsconfig.lib.json",
+            "project": "projects/marco-eckstein/angular-lib-common/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/marco-eckstein/angular-lib-common/src/test.ts",
+            "tsConfig": "projects/marco-eckstein/angular-lib-common/tsconfig.spec.json",
+            "karmaConfig": "projects/marco-eckstein/angular-lib-common/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/marco-eckstein/angular-lib-common/tsconfig.lib.json",
+              "projects/marco-eckstein/angular-lib-common/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-lib-app"

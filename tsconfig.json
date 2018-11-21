@@ -23,6 +23,14 @@
     "noUnusedParameters": true,
     "strict": true,
     // true via '"strict": true'. TODO: Consider removing later:
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@marco-eckstein/angular-lib-common": [
+        "dist/marco-eckstein/angular-lib-common"
+      ],
+      "@marco-eckstein/angular-lib-common/*": [
+        "dist/marco-eckstein/angular-lib-common/*"
+      ]
+    }
   }
 }
