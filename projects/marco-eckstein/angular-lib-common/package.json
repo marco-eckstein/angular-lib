@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/marco-eckstein/angular-lib/issues"
   },
-"homepage": "https://github.com/marco-eckstein/angular-lib#readme.md",
+  "homepage": "https://github.com/marco-eckstein/angular-lib#readme.md",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0"
