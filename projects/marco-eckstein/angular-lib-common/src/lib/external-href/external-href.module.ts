@@ -6,14 +6,14 @@ import { ExternalHRefDirective } from "./external-href.directive";
 /**
  * The module containing {@link ExternalHRefDirective}.
  *
- * You can configure this module and hence the directive via {@link configure(options)}
+ * You can configure this module and hence the directive via {@link forRoot(options)}
  * as follows:
  * ```
  * @NgModule({
  *   ...
  *   imports: [
  *     ...
- *     ExternalHRefModule.configure({ ... }),
+ *     ExternalHRefModule.forRoot({ ... }),
  *     ...
  *   ],
  *   ...
@@ -93,7 +93,7 @@ export class ExternalHRefModule {
      *   `<a href="http://foo" target="_blank" rel="noreferrer noopener"></a>`.
      *
      */
-    static configure(options: ExternalHrefOptions): ModuleWithProviders<ExternalHRefModule> {
+    static forRoot(options: ExternalHrefOptions): ModuleWithProviders<ExternalHRefModule> {
         return {
             ngModule: ExternalHRefModule,
             providers: [

@@ -28,7 +28,7 @@ describe("ExternalHRefModule", () => {
 });
 
 function test(options?: ExternalHrefOptions): Promise<HTMLAnchorElement> {
-    const externalHrefModule = options ? ExternalHRefModule.configure(options) : ExternalHRefModule;
+    const externalHrefModule = options ? ExternalHRefModule.forRoot(options) : ExternalHRefModule;
     TestBed.configureTestingModule({
         declarations: [TestComponent],
         imports: [externalHrefModule]

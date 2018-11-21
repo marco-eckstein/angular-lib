@@ -36,7 +36,7 @@ describe("ExternalHRefModule import", () => {
     it("should work with configuration", () => {
         TestBed.configureTestingModule({
             declarations: [AppComponent],
-            imports: [ExternalHRefModule.configure({ externalHRefTargetDefaultsToBlank: true })],
+            imports: [ExternalHRefModule.forRoot({ externalHRefTargetDefaultsToBlank: true })],
         }).compileComponents().then(() => {
             const fixture = TestBed.createComponent(AppComponent);
             fixture.detectChanges();

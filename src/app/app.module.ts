@@ -9,7 +9,7 @@ import { AppComponent } from "./app.component";
         AppComponent
     ],
     imports: [
-        ExternalHRefModule.configure({ externalHRefTargetDefaultsToBlank: true }),
+        ExternalHRefModule.forRoot({ externalHRefTargetDefaultsToBlank: true }),
         BrowserModule
     ],
     providers: [],
