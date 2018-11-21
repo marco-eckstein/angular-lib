@@ -39,3 +39,5 @@ Run `npm run build-app` to test and build the demo app.
 
 Run `npm run build-all` to test and build everything. It will also apply linting and end-to-end testing.
 Due to the aforementioned bug, you may have to run this multiple times (typically twice) until it succeeds.
+
+Run `npm run doc` to build documentation.
