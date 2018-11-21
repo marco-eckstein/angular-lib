@@ -1,6 +1,23 @@
 {
   "name": "@marco-eckstein/angular-lib-common",
   "version": "0.0.0",
+  "description": "Angular library for common tasks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marco-eckstein/angular-lib.git"
+  },
+  "keywords": [
+    "angular",
+  ],
+  "author": "Marco Eckstein <marco.eckstein@gmx.de>",
+  "contributors": [
+    "Marco Eckstein <marco.eckstein@gmx.de>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marco-eckstein/angular-lib/issues"
+  },
+"homepage": "https://github.com/marco-eckstein/angular-lib#readme.md",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0"
