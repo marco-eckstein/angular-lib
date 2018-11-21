@@ -8,6 +8,11 @@
   },
   "keywords": [
     "angular",
+    "link",
+    "anchor",
+    "_blank",
+    "noopener",
+    "noreferrer"
   ],
   "author": "Marco Eckstein <marco.eckstein@gmx.de>",
   "contributors": [

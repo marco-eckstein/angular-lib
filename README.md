@@ -8,6 +8,25 @@ The main app `angular-lib-app` is a demo app for contained Angular library packa
 
 [![npm version](https://badge.fury.io/js/%40marco-eckstein%2Fangular-lib-common.svg)](https://badge.fury.io/js/%40marco-eckstein%2Fangular-lib-common) Angular library for common tasks
 
+### ExternalHRefModule
+
+External links with `target="blank"` are
+[potentially unsafe](https://developers.google.com/web/tools/lighthouse/audits/noopener).
+After importing this module, a directive will be applied to all your links, making them
+safe by applying `rel="noopener noreferrer"`.
+You can configure the module with various options.
+E.g., you can configure it to apply `target="blank"` to all external links, potentially
+relieving you from verbosity as in\
+`<a href="http://my-url.com" target="_blank" rel="noopener noreferrer">`\
+vs.\
+`<a href="http://my-url.com">`.
+
+See the code documentation for details about usage and configuration:
+
+- [ExternalHRefModule](blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href.module.ts)
+- [ExternalHrefDirective](blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href.directive.ts)
+- [ExternalHrefOptions](blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href-options.ts)
+
 ## Development
 
 Run `npm start` to run and open the demo app.
