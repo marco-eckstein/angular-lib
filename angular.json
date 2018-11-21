@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-libs-app": {
+    "angular-lib-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -36,7 +36,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-libs-app",
+            "outputPath": "dist/angular-lib-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -80,18 +80,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-libs-app:build"
+            "browserTarget": "angular-lib-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-libs-app:build:production"
+              "browserTarget": "angular-lib-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-libs-app:build"
+            "browserTarget": "angular-lib-app:build"
           }
         },
         "test": {
@@ -125,7 +125,7 @@
         }
       }
     },
-    "angular-libs-app-e2e": {
+    "angular-lib-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -134,11 +134,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-libs-app:serve"
+            "devServerTarget": "angular-lib-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-libs-app:serve:production"
+              "devServerTarget": "angular-lib-app:serve:production"
             }
           }
         },
@@ -154,5 +154,5 @@
       }
     }
   },
-  "defaultProject": "angular-libs-app"
+  "defaultProject": "angular-lib-app"
 }
