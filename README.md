@@ -35,13 +35,13 @@ vs.\
 See the code documentation for details about usage and configuration:
 
 - [ExternalHRefModule](
-      blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href.module.ts
+      projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href.module.ts
   )
 - [ExternalHrefDirective](
-      blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href.directive.ts
+      projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href.directive.ts
   )
 - [ExternalHrefOptions](
-      blob/master/projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href-options.ts
+      projects/marco-eckstein/angular-lib-common/src/lib/external-href/external-href-options.ts
   )
 
 ## Development
