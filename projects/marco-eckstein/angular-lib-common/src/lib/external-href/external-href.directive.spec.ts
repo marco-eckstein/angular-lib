@@ -239,7 +239,7 @@ function test(template: string, options: ExternalHrefOptions = {}): Promise<Argu
             fixture: componentFixture,
             component: componentFixture.componentInstance,
             directiveElement: directiveElement,
-            directive: directiveElement.injector.get(ExternalHRefDirective),
+            directive: directiveElement.injector.get<ExternalHRefDirective>(ExternalHRefDirective),
             aElement: directiveElement.nativeElement,
         };
     });
