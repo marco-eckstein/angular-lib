@@ -10,7 +10,7 @@ import { ExternalHRefModule } from "./external-href.module";
     selector: "lib-test-component",
     template: `<a href="http://foo"></a>`,
 })
-class TestComponent {}
+class TestComponent { }
 
 describe("ExternalHRefModule", () => {
     it("works without configuration", () => {

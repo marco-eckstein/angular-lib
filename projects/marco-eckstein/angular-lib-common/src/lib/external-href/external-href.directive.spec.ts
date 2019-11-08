@@ -188,7 +188,7 @@ describe("ExternalHRefDirective", () => {
 
     describe("safeBlankRelTokens: ['unsafeToken']", () => {
         it("rejects unsafe tokens", async(() => {
-            test(`<a></a>`,  { safeBlankRelTokens: ["unsafeToken"] })
+            test(`<a></a>`, { safeBlankRelTokens: ["unsafeToken"] })
                 .then(() => fail("Promise should have failed."))
                 .catch((error: Error) => expect(error.message).toContain("unsafeToken"));
         }));
