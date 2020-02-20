@@ -46,8 +46,6 @@ See the code documentation for details about usage and configuration:
 
 ## Development
 
-Run `npm start` to run and open the demo app.
-
 Run `npm run build-lib` to test and build the libraries.
 Since there seems to be a bug in `ng build`, the output may be broken sometimes.
 Unfortunately, you will only notice when you try to build the main app.
@@ -56,6 +54,8 @@ Run `npm run build-app` to test and build the demo app.
 
 Run `npm run build-all` to test and build everything. It will also apply linting and end-to-end testing.
 Due to the aforementioned bug, you may have to run this multiple times (typically twice) until it succeeds.
+
+After building, run `npm start` to run and open the demo app.
 
 Run `npm run doc` to build documentation.
 

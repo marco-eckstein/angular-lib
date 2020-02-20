@@ -5,11 +5,11 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "module": "es2015",
+    "module": "esnext",
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "importHelpers": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "es2015",
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -32,5 +32,10 @@
         "dist/marco-eckstein/angular-lib-common/*"
       ]
     }
+  },
+  "angularCompilerOptions": {
+    "annotateForClosureCompiler": true,
+    "fullTemplateTypeCheck": true, // TODO: Remove when this has become the default.
+    "strictInjectionParameters": true // TODO: Remove when this has become the default.
   }
 }

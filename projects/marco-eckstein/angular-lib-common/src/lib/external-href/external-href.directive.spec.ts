@@ -188,7 +188,7 @@ describe("ExternalHRefDirective", () => {
 
     describe("safeBlankRelTokens: ['unsafeToken']", () => {
         it("rejects unsafe tokens", async(() => {
-            test(`<a></a>`,  { safeBlankRelTokens: ["unsafeToken"] })
+            test(`<a></a>`, { safeBlankRelTokens: ["unsafeToken"] })
                 .then(() => fail("Promise should have failed."))
                 .catch((error: Error) => expect(error.message).toContain("unsafeToken"));
         }));
@@ -229,7 +229,7 @@ function test(template: string, options: ExternalHrefOptions = {}): Promise<Argu
         ]
     });
     TestBed.overrideComponent(TestComponent, {
-        set: { template: template }
+        set: { template }
     });
     return TestBed.compileComponents().then(() => {
         const componentFixture = TestBed.createComponent(TestComponent);
@@ -238,7 +238,7 @@ function test(template: string, options: ExternalHrefOptions = {}): Promise<Argu
         return {
             fixture: componentFixture,
             component: componentFixture.componentInstance,
-            directiveElement: directiveElement,
+            directiveElement,
             directive: directiveElement.injector.get(ExternalHRefDirective),
             aElement: directiveElement.nativeElement,
         };

@@ -1,8 +1,8 @@
 import { browser, by, element, ElementFinder, promise } from "protractor";
 
 export class AppPage {
-    navigateTo() {
-        return browser.get("/");
+    navigateTo(): Promise<unknown> {
+        return browser.get(browser.baseUrl) as Promise<unknown>;
     }
 
     getAnchorTarget(cssClass: string): promise.Promise<string> {
