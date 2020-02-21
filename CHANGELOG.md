@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.2"></a>
+## [2.0.2](https://github.com/marco-eckstein/angular-lib/compare/v2.0.1...v2.0.2) (2020-02-21)
+
+
+### Bug Fixes
+
+* fix building for and publishing to npm ([f17b677](https://github.com/marco-eckstein/angular-lib/commit/f17b677))
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/marco-eckstein/angular-lib/compare/v2.0.0...v2.0.1) (2020-02-21)
 
