@@ -62,6 +62,8 @@ After building, run `npm start` to run and open the demo app.
 
 ### Bump version
 
+Before bumping the version, make sure the copyright year range in the license file is up to date.
+
 You have to set the next version manually in the library packages' `package.json` files.
 Then, run `npm run standard-version` instead of `npm version` to bump the version.
 Make sure the manually and automatically set versions match.
