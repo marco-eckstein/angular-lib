@@ -46,18 +46,26 @@ See the code documentation for details about usage and configuration:
 
 ## Development
 
-Run `npm run build-lib` to test and build the libraries.
-Since there seems to be a bug in `ng build`, the output may be broken sometimes.
-Unfortunately, you will only notice when you try to build the main app.
+### Build
 
-Run `npm run build-app` to test and build the demo app.
+Run `npm run verify` to build, lint and test everything and also build the documentation.
 
-Run `npm run build-all` to test and build everything. It will also apply linting and end-to-end testing.
-Due to the aforementioned bug, you may have to run this multiple times (typically twice) until it succeeds.
+For finer-grained commands, see the scripts in `./package.json`.
+
+Note that broken library build output has been observed in the past, probably due to a bug in `ng build`.
+You may only notice this when you try to build the main/demo app.
+Running `npm run verify` (or a finer-grained build command) multiple times (typically twice) may help.
+
+### Run
 
 After building, run `npm start` to run and open the demo app.
 
-Run `npm run doc` to build documentation.
+### Bump version
 
-Run `npm run standard-version` instead of `npm version` to bump the version.
-Afterwards, you have to amend the commit and set the version in the library packages `package.json` files.
+You have to set the next version manually in the library packages' `package.json` files.
+Then, run `npm run standard-version` instead of `npm version` to bump the version.
+Make sure the manually and automatically set versions match.
+
+### Publish
+
+Run `npm run publish-lib` to publish the libraries to npm.
