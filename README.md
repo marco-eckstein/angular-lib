@@ -68,4 +68,4 @@ Make sure the manually and automatically set versions match.
 
 ### Publish
 
-Run `npm run publish-lib` to publish the libraries to npm.
+Run `npm run publish-lib` to verify and publish the libraries to npm.
