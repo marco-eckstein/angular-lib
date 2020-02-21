@@ -34,6 +34,11 @@
     }
   },
   "angularCompilerOptions": {
+    // Disabling Ivy is mandatory for libraries that are supposed to be published via npm.
+    // The Angular CLI handled this by providing a tsconfig.lib.prod.json with "enableIvy": false.
+    // However, building other projects, e.g. the main demo app, would mess up the library build.
+    // Thus, we rather set it here so it is forgotten nowhere.
+    "enableIvy": false,
     "annotateForClosureCompiler": true,
     "fullTemplateTypeCheck": true, // TODO: Remove when this has become the default.
     "strictInjectionParameters": true // TODO: Remove when this has become the default.

@@ -16,7 +16,7 @@
     "doc": "./node_modules/.bin/compodoc -p ./tsconfig.json",
     "verify": "npm run build && npm run lint && npm test && npm run e2e && npm run doc",
     "standard-version": "git add --all && standard-version --commit-all",
-    "publish-lib": "npm run verify && npm publish ./projects/marco-eckstein/angular-lib-common --access public"
+    "publish-lib": "npm run verify && npm publish ./dist/marco-eckstein/angular-lib-common --access public"
   },
   "private": true,
   "dependencies": {

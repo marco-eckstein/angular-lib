@@ -157,7 +157,6 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/marco-eckstein/angular-lib-common/tsconfig.lib.prod.json"
             }
           }
         },
