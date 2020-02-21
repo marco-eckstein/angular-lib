@@ -1,6 +1,6 @@
 {
   "name": "angular-lib-app",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "scripts": {
     "start": "ng serve --open",
     "build-lib": "ng build @marco-eckstein/angular-lib-common --prod",
