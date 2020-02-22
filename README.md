@@ -1,8 +1,8 @@
+# angular-lib
+
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](
     https://conventionalcommits.org
 )
-
-# angular-lib
 
 Multi-package repository for [Angular](https://angular.io/) library packages. So far, there is only one package.
 
